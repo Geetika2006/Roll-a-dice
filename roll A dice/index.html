@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="w-70% ">
+    <h1 class="text-white font-bold text-3xl text-center mt-2 mb-2"id="heading">Welcome <span id="nameSpan"></span></h1>
+    <input type="text" placeholder="enter your name" id="name" class=" name  text-neutral-400 text-center focus:text-white mt-2 mb-2 border-2 border-neutral-400 rounded- hover:text-stone-900 ">
+   <br>
+    <button class=" submit text-12 text-neutral-600 text-center mt-2 mb-2   w-[calc(50vmin)] bg-sky-300 hover:bg-sky-200 hover:text-stone-900 transition-all  py-2  rounded-xl " onclick="welcome()" id="btn">Submit Name</button>
+    
+    </div class="w-70% ">
+
+     <div class="container">
+        <h1 class="text-white font-bold text-3xl text-center mt-2 mb-2" id="title">Roll the dice!</h1>
+        <p class="text-neutral-300  text-center m-3 mb-5">An Online Random Dice! Virtual dice, like the one above, are almost always based on pseudo-random number generating algorithms, which are also not truly random. However, a virtual dice roll is likely more close to true randomness than most physical dice.
+
+        </p>
+        <div id="dice" class="dice text-center    hover:bg-sky-200 hover:text-stone-900 hover:cursor-pointer">0</div>
+        <button class="btn translate-x-[calc(50vw)]]  w-[calc(50vmin)" id="btn" onclick="roll()">Roll the dice</button>
+        <audio src="dice-audio.mp3" id="diceAudio"></audio>
+    
+        
+      </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+    
+    
+</body>
+</html>
